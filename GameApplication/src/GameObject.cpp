@@ -6,6 +6,10 @@ GameObject::GameObject()
 	m_Rotation = vec3(0.0f, 0.0f, 0.0f);
 	m_Scale = vec3(1.0f, 1.0f, 1.0f);
 
+	m_Position1 = vec3(0.0f, 0.0f, 0.0f);
+	m_Rotation1 = vec3(0.0f, 0.0f, 0.0f);
+	m_Scale1 = vec3(1.0f, 1.0f, 1.0f);
+
 	m_ModelMatrix = mat4(1.0f);
 	m_TranslationMatrix = mat4(1.0f);
 	m_ScaleMatrix = mat4(1.0f);

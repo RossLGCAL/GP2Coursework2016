@@ -17,20 +17,20 @@ MyGame::~MyGame()
 
 void MyGame::initScene()
 {
-	string modelPath = ASSET_PATH + MODEL_PATH + "/Earth.fbx";
+	string modelPath = ASSET_PATH + MODEL_PATH + "/1h_axe.obj";
 	string vsFilename = ASSET_PATH + SHADER_PATH + "/normalMappingVS.glsl";
 	string fsFilename = ASSET_PATH + SHADER_PATH + "/normalMappingFS.glsl";
-	string diffuseTexturePath = ASSET_PATH + TEXTURE_PATH + "/earth_diff.png";
-	string specularTexturePath = ASSET_PATH + TEXTURE_PATH + "/earth_spec.png";
+	string diffuseTexturePath = ASSET_PATH + TEXTURE_PATH + "/1h_axeD.png";
+	string specularTexturePath = ASSET_PATH + TEXTURE_PATH + "/1h_axeS.png";
 	string bumpTexturePath = ASSET_PATH + TEXTURE_PATH + "/earth_norm.png";
 	m_TestGO=shared_ptr<GameObject>(loadModelFromFile(modelPath));
 	m_TestGO->loadShaders(vsFilename, fsFilename);
 
-	m_TestGO->setScale(vec3(5.5f, 5.5f, 5.5f));
+	m_TestGO->setScale(vec3(1.5f, 1.5f, 1.5f));
 	m_TestGO->loadDiffuseTexture(diffuseTexturePath);
 	m_TestGO->loadSpecularTexture(specularTexturePath);
 	m_TestGO->loadNormaltexture(bumpTexturePath);
-	m_CameraPosition = vec3(0.0f, 0.0f, 100.0f);
+	m_CameraPosition = vec3(0.0f, 0.0f, 200.0f);
 
 	m_Light = shared_ptr<Light>(new Light());
 	m_Light->DiffuseColour = vec4(1.0f, 1.0f, 1.0f, 1.0f);

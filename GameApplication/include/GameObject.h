@@ -93,6 +93,9 @@ private:
 	vec3 m_Position;
 	vec3 m_Rotation;
 	vec3 m_Scale;
+	vec3 m_Position1;
+	vec3 m_Rotation1;
+	vec3 m_Scale1;
 
 	mat4 m_TranslationMatrix;
 	mat4 m_ScaleMatrix;
