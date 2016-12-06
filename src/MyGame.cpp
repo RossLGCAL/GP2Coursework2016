@@ -30,7 +30,7 @@ void MyGame::initScene()
 	m_TestGO->loadDiffuseTexture(diffuseTexturePath);
 	m_TestGO->loadSpecularTexture(specularTexturePath);
 	m_TestGO->loadNormaltexture(bumpTexturePath);
-	m_CameraPosition = vec3(0.0f, 0.0f, 200.0f);
+	m_CameraPosition = vec3(0.0f, 0.0f, 1000.0f);
 
 	m_Light = shared_ptr<Light>(new Light());
 	m_Light->DiffuseColour = vec4(1.0f, 1.0f, 1.0f, 1.0f);
@@ -68,7 +68,7 @@ void MyGame::update()
 	GameApplication::update();
 
 	m_ProjMatrix = perspective(radians(45.0f), (float)m_WindowWidth / (float)m_WindowHeight, 0.1f, 1000.0f);
-	m_ViewMatrix = lookAt(m_CameraPosition, vec3(0.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f));
+	m_ViewMatrix = lookAt(m_CameraPosition, vec3(450.0f, 0.0f, 0.0f), vec3(0.0f, 1.0f, 0.0f));
 	m_TestGO->onUpdate();
 }
 
