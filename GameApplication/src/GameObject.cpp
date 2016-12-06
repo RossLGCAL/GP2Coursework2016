@@ -13,8 +13,12 @@ GameObject::GameObject()
 	m_ModelMatrix = mat4(1.0f);
 	m_TranslationMatrix = mat4(1.0f);
 	m_ScaleMatrix = mat4(1.0f);
-
 	m_RotationMatrix = mat4(1.0f);
+
+	m_ModelMatrix1 = mat4(1.0f);
+	m_TranslationMatrix1 = mat4(1.0f);
+	m_ScaleMatrix1 = mat4(1.0f);
+	m_RotationMatrix1 = mat4(1.0f);
 
 	m_VBO=0;
 	m_EBO=0;

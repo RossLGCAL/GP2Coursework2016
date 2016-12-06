@@ -102,6 +102,11 @@ private:
 	mat4 m_RotationMatrix;
 	mat4 m_ModelMatrix;
 
+	mat4 m_TranslationMatrix1;
+	mat4 m_ScaleMatrix1;
+	mat4 m_RotationMatrix1;
+	mat4 m_ModelMatrix1;
+
 	GLuint m_VBO;
 	GLuint m_EBO;
 	GLuint m_VAO;
