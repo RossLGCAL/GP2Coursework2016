@@ -17,12 +17,12 @@ MyGame::~MyGame()
 
 void MyGame::initScene()
 {
-	string modelPath = ASSET_PATH + MODEL_PATH + "/1h_axe.obj";
+	string modelPath = ASSET_PATH + MODEL_PATH + "/2h_axe.obj";
 	string vsFilename = ASSET_PATH + SHADER_PATH + "/normalMappingVS.glsl";
 	string fsFilename = ASSET_PATH + SHADER_PATH + "/normalMappingFS.glsl";
-	string diffuseTexturePath = ASSET_PATH + TEXTURE_PATH + "/1h_axeD.png";
-	string specularTexturePath = ASSET_PATH + TEXTURE_PATH + "/1h_axeS.png";
-	string bumpTexturePath = ASSET_PATH + TEXTURE_PATH + "/earth_norm.png";
+	string diffuseTexturePath = ASSET_PATH + TEXTURE_PATH + "/2h_axe.png";
+	string specularTexturePath = ASSET_PATH + TEXTURE_PATH + "/2h_axeS.png";
+	string bumpTexturePath = ASSET_PATH + TEXTURE_PATH + "/2h_axeN.png";
 	m_TestGO=shared_ptr<GameObject>(loadModelFromFile(modelPath));
 	m_TestGO->loadShaders(vsFilename, fsFilename);
 
